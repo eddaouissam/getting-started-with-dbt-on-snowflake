@@ -5,7 +5,6 @@ SELECT
     cl.first_name,
     cl.last_name,
     cl.phone_number,
-    cl.e_mail,
     SUM(oh.order_total) AS total_sales,
     ARRAY_AGG(DISTINCT oh.location_id) AS visited_location_ids_array
 FROM {{ ref('raw_customer_customer_loyalty') }} cl
