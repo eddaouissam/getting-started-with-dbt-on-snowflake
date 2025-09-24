@@ -1,6 +1,5 @@
 SELECT 
     cl.customer_id,
-    cl.city,
     cl.country,
     cl.first_name,
     cl.last_name,
